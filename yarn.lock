@@ -90,14 +90,13 @@
     "@saberhq/anchor-contrib" "^1.12.20"
 
 "@port.finance/port-sdk@^0.2.54":
-  version "0.2.55"
-  resolved "https://registry.yarnpkg.com/@port.finance/port-sdk/-/port-sdk-0.2.55.tgz#3582f1ee242e86d57b8c94ca45b2f88d02e3d1b5"
-  integrity sha512-wJeYkY+QonFQpMiB+gDgSNcxXkHOQF/48rAIe5VkrKD/YYA5+rrp8UQksANKeoH/vNa7T6RLRo5wQu6uRmhoNg==
+  version "0.2.62"
+  resolved "https://registry.yarnpkg.com/@port.finance/port-sdk/-/port-sdk-0.2.62.tgz#80fd14436904fa2ccc234d9b0b3bcafa126742a2"
+  integrity sha512-3ykBMQ7bwaM6jH4xHjvruAJArcazfBLVZ2bXGBLVRPzXGPpXeA2s/KMeb8nNzfRLJ8ooqMH7lEkiwefojJtcog==
   dependencies:
-    "@project-serum/anchor" "^0.20.1"
-    "@project-serum/common" "^0.0.1-beta.3"
-    "@saberhq/solana-contrib" "^1.12.35"
-    "@saberhq/token-utils" "^1.12.35"
+    "@project-serum/anchor" "^0.21.0"
+    "@saberhq/solana-contrib" "^1.12.53"
+    "@saberhq/token-utils" "^1.12.53"
     "@solana/buffer-layout" "^3.0.0"
     "@solana/spl-token" "^0.1.8"
     "@solana/spl-token-registry" "^0.2.1107"
@@ -149,7 +148,7 @@
     snake-case "^3.0.4"
     toml "^3.0.0"
 
-"@project-serum/anchor@^0.20.0", "@project-serum/anchor@^0.20.1":
+"@project-serum/anchor@^0.20.0":
   version "0.20.1"
   resolved "https://registry.yarnpkg.com/@project-serum/anchor/-/anchor-0.20.1.tgz#0937807e807e8332aa708cfef4bcb6cbb88b4129"
   integrity sha512-2TuBmGUn9qeYz6sJINJlElrBuPsaUAtYyUsJ3XplEBf1pczrANAgs5ceJUFzdiqGEWLn+84ObSdBeChT/AXYFA==
@@ -169,10 +168,39 @@
     snake-case "^3.0.4"
     toml "^3.0.0"
 
+"@project-serum/anchor@^0.21.0":
+  version "0.21.0"
+  resolved "https://registry.yarnpkg.com/@project-serum/anchor/-/anchor-0.21.0.tgz#ad5fb33744991ec1900cdb2fd22707c908b12b5f"
+  integrity sha512-flRuW/F+iC8mitNokx82LOXyND7Dyk6n5UUPJpQv/+NfySFrNFlzuQZaBZJ4CG5g9s8HS/uaaIz1nVkDR8V/QA==
+  dependencies:
+    "@project-serum/borsh" "^0.2.4"
+    "@solana/web3.js" "^1.17.0"
+    base64-js "^1.5.1"
+    bn.js "^5.1.2"
+    bs58 "^4.0.1"
+    buffer-layout "^1.2.2"
+    camelcase "^5.3.1"
+    cross-fetch "^3.1.5"
+    crypto-hash "^1.3.0"
+    eventemitter3 "^4.0.7"
+    find "^0.3.0"
+    js-sha256 "^0.9.0"
+    pako "^2.0.3"
+    snake-case "^3.0.4"
+    toml "^3.0.0"
+
 "@project-serum/borsh@^0.2.2":
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/@project-serum/borsh/-/borsh-0.2.3.tgz#1d705c5887484cb6a127dd5feff58e90cbfcb558"
   integrity sha512-lH9zEYADZE3cxrgiFym8+jbUE3NM/LH+WOKYcUjs65CT10Q64Hv45bcAAa/phwYk4Tpz0uQ1x+ergFaAoGt67Q==
+  dependencies:
+    bn.js "^5.1.2"
+    buffer-layout "^1.2.0"
+
+"@project-serum/borsh@^0.2.4":
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/@project-serum/borsh/-/borsh-0.2.5.tgz#6059287aa624ecebbfc0edd35e4c28ff987d8663"
+  integrity sha512-UmeUkUoKdQ7rhx6Leve1SssMR/Ghv8qrEiyywyxSWg7ooV7StdpPBhciiy5eB3T0qU1BXvdRNC8TdrkxK7WC5Q==
   dependencies:
     bn.js "^5.1.2"
     buffer-layout "^1.2.0"
@@ -234,7 +262,7 @@
     colors "^1.4.0"
     tslib "^2.3.1"
 
-"@saberhq/solana-contrib@^1.10.4", "@saberhq/solana-contrib@^1.12.35", "@saberhq/solana-contrib@^1.12.53", "@saberhq/solana-contrib@^1.12.55":
+"@saberhq/solana-contrib@^1.10.4", "@saberhq/solana-contrib@^1.12.53", "@saberhq/solana-contrib@^1.12.55":
   version "1.12.55"
   resolved "https://registry.yarnpkg.com/@saberhq/solana-contrib/-/solana-contrib-1.12.55.tgz#acf7c5b15b36037e18f0bc6ba6f200636fee97c8"
   integrity sha512-Pft3MxOE7Q20IgGEY+gJn6LkCTHNTOT67LDmaAWLb5PnMBSPG+RkAwb6xmPV8IZPOusbGsoY/wP/ksN5eh2Bog==
@@ -246,7 +274,7 @@
     tiny-invariant "^1.2.0"
     tslib "^2.3.1"
 
-"@saberhq/token-utils@^1.10.4", "@saberhq/token-utils@^1.12.35", "@saberhq/token-utils@^1.12.53":
+"@saberhq/token-utils@^1.10.4", "@saberhq/token-utils@^1.12.53":
   version "1.12.55"
   resolved "https://registry.yarnpkg.com/@saberhq/token-utils/-/token-utils-1.12.55.tgz#f18b9f5ef2ca065f4a640c334ea26190f64cf57f"
   integrity sha512-2NNhtgps5wQf14WOATwHPr1W79jIny0mXokihdekf1BPCXK9n8Y/4Mz6p/WI8vxR+Tg/DoyeosS0smr5v7RSUw==
@@ -935,6 +963,13 @@ cross-fetch@^3.1.4:
   integrity sha512-1eAtFWdIubi6T4XPy6ei9iUFoKpUkIF971QLN8lIvvvwueI65+Nw5haMNKUwfJxabqlIIDODJKGrQ66gxC0PbQ==
   dependencies:
     node-fetch "2.6.1"
+
+cross-fetch@^3.1.5:
+  version "3.1.5"
+  resolved "https://registry.yarnpkg.com/cross-fetch/-/cross-fetch-3.1.5.tgz#e1389f44d9e7ba767907f7af8454787952ab534f"
+  integrity sha512-lvb1SBsI0Z7GDwmuid+mU3kWVBwTVUbe7S0H52yaaAdQOXq2YktTCZdlAcNKFzE6QtRz0snpw9bNiPeOIkkQvw==
+  dependencies:
+    node-fetch "2.6.7"
 
 cross-spawn@^7.0.2, cross-spawn@^7.0.3:
   version "7.0.3"
@@ -2091,6 +2126,13 @@ node-fetch@2.6.1:
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.1.tgz#045bd323631f76ed2e2b55573394416b639a0052"
   integrity sha512-V4aYg89jEoVRxRb2fJdAg8FHvI7cEyYdVAh94HH0UIK8oJxUfkjlDQN9RbMx+bEjP7+ggMiFRprSti032Oipxw==
 
+node-fetch@2.6.7:
+  version "2.6.7"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.7.tgz#24de9fba827e3b4ae44dc8b20256a379160052ad"
+  integrity sha512-ZjMPFEfVx5j+y2yF35Kzx5sF7kDzxuDj6ziH4FFbOp87zKDZNx8yExJIb05OGF4Nlt9IHFIMBkRl41VdvcNdbQ==
+  dependencies:
+    whatwg-url "^5.0.0"
+
 node-gyp-build@^4.2.0, node-gyp-build@^4.3.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/node-gyp-build/-/node-gyp-build-4.3.0.tgz#9f256b03e5826150be39c764bf51e993946d71a3"
@@ -2692,6 +2734,11 @@ toml@^3.0.0:
   resolved "https://registry.yarnpkg.com/toml/-/toml-3.0.0.tgz#342160f1af1904ec9d204d03a5d61222d762c5ee"
   integrity sha512-y/mWCZinnvxjTKYhJ+pYxwD0mRLVvOtdS2Awbgxln6iEnt4rk0yBxeSBHkGJcPucRiG0e55mwWp+g/05rsrd6w==
 
+tr46@~0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/tr46/-/tr46-0.0.3.tgz#8184fd347dac9cdc185992f3a6622e14b9d9ab6a"
+  integrity sha1-gYT9NH2snNwYWZLzpmIuFLnZq2o=
+
 traverse-chain@~0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/traverse-chain/-/traverse-chain-0.1.0.tgz#61dbc2d53b69ff6091a12a168fd7d433107e40f1"
@@ -2824,6 +2871,19 @@ v8-compile-cache@^2.0.3:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/v8-compile-cache/-/v8-compile-cache-2.3.0.tgz#2de19618c66dc247dcfb6f99338035d8245a2cee"
   integrity sha512-l8lCEmLcLYZh4nbunNZvQCJc5pv7+RCwa8q/LdUx8u7lsWvPDKmpodJAJNwkAhJC//dFY48KuIEmjtd4RViDrA==
+
+webidl-conversions@^3.0.0:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/webidl-conversions/-/webidl-conversions-3.0.1.tgz#24534275e2a7bc6be7bc86611cc16ae0a5654871"
+  integrity sha1-JFNCdeKnvGvnvIZhHMFq4KVlSHE=
+
+whatwg-url@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/whatwg-url/-/whatwg-url-5.0.0.tgz#966454e8765462e37644d3626f6742ce8b70965d"
+  integrity sha1-lmRU6HZUYuN2RNNib2dCzotwll0=
+  dependencies:
+    tr46 "~0.0.3"
+    webidl-conversions "^3.0.0"
 
 which-boxed-primitive@^1.0.2:
   version "1.0.2"
